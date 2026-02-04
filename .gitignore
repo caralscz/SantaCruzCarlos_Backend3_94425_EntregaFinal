@@ -1,0 +1,19 @@
+# ============================================================== 
+# CoderHouse 2025 
+# Alumno Carlos A. santa Cruz
+# Backend III: Testing y Escalabilidad Backend
+# Comisión 94425
+# Del 12/11/25 al 15/01/26
+# Miércoles  de 20:30 a 22:30h
+# Profe:  Maximiliano Sebastian Martin
+# Adjunto o Tutor: Maximiliano Salas
+# ============================================================== 
+# archivos y carpetas a ignorar por git (que no queremos subir al repositorio)
+# si el nombre finaliza con /, ignora la carpeta y todo su contenido
+
+# este es el contenedor de paginas que uso de apuntes
+.apuntes/
+
+# de aquí en adelante son los que se ignora por defecto lo que instalamos
+node_modules
+.env

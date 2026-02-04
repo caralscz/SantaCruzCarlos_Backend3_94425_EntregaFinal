@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+// -----------------------------------------------------------
+// src/public/index.html
+//
+// Pagina para que no salga el mensaje de error: Cannot GET /
+// -----------------------------------------------------------
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      display: flex;
+      background-color: rgb(98, 164, 230);
+      /* justify-content: space-between; */
+    }
+
+    .container div {
+      background-color: #f1f1f1;
+      margin: .3125rem;      /* 5px */
+      padding: .625rem;      /* 10px */
+      font-size: 1.250rem;   /* 20px */
+    }
+  </style>
+  <title>Scz Coderhouse - Bakend III</title>
+  <!-- <link rel="icon" type="image/png+xml" href="../../favicon.ico" /> -->
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <img src="./img/pets.png" alt="Mascotas">
+    </div>
+    <div>
+      <h1>Bienvenido</h1>
+      <h2>Coderhouse - Curso de backend III - 2025 </h2>
+    </div>
+
+  </div>
+  <hr>
+  <p> </p>
+  🏠 Home :<A href="/">http://localhost</A><br>
+  <p> </p>
+  <b>mocks</b><br> <!--  target="c94425" rel="noopener noreferrer" -->
+  🐶 Mascotas  GET: <A href="/api/mocks/mockingpets">
+    /api/mocks/mockingpets</A>   - Genera 100 mascotas random con faker y las muestra<br>
+
+  🙋🏽 Usuarios  GET: <A href="/api/mocks/mockingusers">
+    /api/mocks/mockingusers</A>  - Genera 50 usuarios random con faker y los muestra <br>
+
+  <p> </p>
+  <b>Leen DB</b><br>
+  😼 Mascotas  API pets :<A href="/api/pets">
+    /api/pets</A><br>
+  👨 Usuarios  API users :<A href="/api/users">
+    /api/users</A><br>
+  😼👨 Adopciones  API adoptions :<A href="/api/adoptions">
+    /api/adoptions</A><br>
+
+    <p> </p>
+  <b>Para ver documentacion con Swagger</b><br>
+
+<a href="http://localhost:8080/api/docs/">http://localhost:8080/api/docs/</a><br>
+
+  <p> </p>
+  <b>Para cargar en DB</b><br>
+  Ingresar con postman  ⇨ POST  →  localhost:8080/api/mocks/generateData  →  {"users":1,"pets":1}
+
+   <p> </p><br>
+  <hr>
+  <p>
+  <div class="container">
+    <div>
+      - Comisión 94425 - Del 12/11/25 al 15/01/26<br>
+      - Alumno: Carlos Alfredo santa Cruz<br>
+      - Profe: Maximiliano Sebastian Martin - Adjunto o Tutor: Maximiliano Salas <br>
+      - Miércoles de 20:30 a 22:30h<br>
+    </div>
+  </div>
+  </p>
+</body>
+
+</html>
