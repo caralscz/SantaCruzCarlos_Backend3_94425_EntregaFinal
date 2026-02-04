@@ -19,8 +19,11 @@ Proyecto backend desarrollado con **Node.js, Express y MongoDB**, orientado a la
 Partiendo de un proyecto dado en clase: 
 https://github.com/CoderContenidos/RecursosBackend-Adoptme
 
-Crear un router llamado mocks.router.js que funcione bajo la ruta base /api/mocks.
+Dockerizando nuestro Proyecto
+Documentar con Swagger  el módulo de “Users”.
+Desarrollar los tests funcionales para todos los endpoints del router “adoption.router.js”.
 
+Crear un router llamado mocks.router.js que funcione bajo la ruta base /api/mocks.
 Mover el endpoint “/mockingpets” (Desarrollado en el primer Desafío Entregable) dentro de este router.
 
 Crear un módulo de Mocking para generar usuarios de acuerdo a un parámetro numérico. 
@@ -46,6 +49,8 @@ Comprobar dichos registros insertados mediante los servicios GET de users y pets
 SantaCruz-Comision94425-entrega01/
 ¦   package-lock.json
 ¦   package.json
+¦   .dockerignore
+¦   dockerfile
 ¦   README.md
 ¦   .env                     # Variables de entorno del proyecto
 ¦   .env_copy                # Copia de respaldo del archivo .env
@@ -57,6 +62,7 @@ SantaCruz-Comision94425-entrega01/
     +-- config                   # Configuración general.  Variables de entorno, DB y Swagger
     ¦   +-- db.js                # Conexión a MongoDB con Mongoose
     ¦   +-- envs.js              # Carga y centraliza variables de entorno
+    ¦   +-- swagger.js           # Test
     ¦
     +-- controllers              # Lógica  de negocio. Control de las rutas
     ¦   +-- adoptions.controller.js  # Controlador de adopciones
@@ -85,6 +91,7 @@ SantaCruz-Comision94425-entrega01/
     ¦
     +-- public                   # Archivos públicos estáticos
     ¦   +-- img                  # Imágenes públicas
+    ¦   ¦-- favicon.ico
     ¦   +-- index.html           # Pagina estática inicial
     ¦
     +-- repository               # Reglas de persistencia. Capa de abstracción entre servicios y DAO
@@ -161,8 +168,10 @@ Ejecutar:
 ```bash
 npm test
 
-
 Incluye tests funcionales para el router de adopciones.
+```
+
+---
 
 ?? Configuración
 
@@ -177,8 +186,13 @@ Levantar servidor: npm start
 ?? Docker 
 
 Ejecutar :
-docker build --no-cache -t santacruz-94425 .
-docker run -d -p 8080:8080 santacruz-94425
+Para crear la "imagen" del proyecto ejecutamos:
+  >  docker build --no-cache -t santacruz-94425 .
+
+Para crear el docker y ejecutar "santacruz-94425" debo hacer:
+  >  docker run -d -p 8080:8080 santacruz-94425
+
+---
 
 ✍️ Autor
 
