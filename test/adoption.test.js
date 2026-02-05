@@ -22,20 +22,23 @@ describe("Adoption Router - Tests Funcionales", () => {
   });
 
   // Test B
-    it("B - Debe crear una adopción correctamente", async () => {
-    const adoptionMock = {
-      userId: '64f000000000000000000001',
-      petId: '64f000000000000000000002'
-    };
+  // const petid= "cca9ad6c2d65f13ecfa4c6b2";
+  // const petid= "46aa44cbeca053f78ebfccc5";
+  // para que este test funcione, el  "petid" que se coloque debe tener "adopted": false, 
 
-    const res = await requester.post("/api/adoptions").send(adoptionMock);
+  it("B - Debe crear una adopción correctamente", async () => {
+    const userid= "3de3c7e49fdff893cd0ff2fa";
+    const petid= "46aa44cbeca053f78ebfccc5";
+    
+    const res = await requester.post(`/api/adoptions/${userid}/${petid}`);
     expect(res.status).to.be.oneOf([200, 201]);
   });
 
   // Test C
   it("C - Debe fallar si faltan datos", async () => {
     const res = await requester.post("/api/adoptions").send({});
-    expect(res.status).to.equal(400);
+    expect(res.status).to.equal(404);
+    // expect(res.status).to.equal(400);
   });
 
   // Test D

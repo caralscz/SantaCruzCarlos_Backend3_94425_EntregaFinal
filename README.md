@@ -167,23 +167,15 @@ Ejecutar:
 
 ```bash
 npm test
-
-Incluye tests funcionales para el router de adopciones.
 ```
 
+Incluye tests funcionales para el router de adopciones.
+Nota: En el Test B
+      para que funcione, el "petid" que se coloque debe tener "adopted": false,
+      porque se controla que el "petid" no esté ya adoptado
 ---
 
-?? Configuración
-
-Clonar el repositorio
-
-Instalar dependencias:  npm install
-
-Configurar .env  (cambiar nombre de .env_copy por .env)
-
-Levantar servidor: npm start
-
-?? Docker 
+## Docker 
 
 Ejecutar :
 Para crear la "imagen" del proyecto ejecutamos:
@@ -191,13 +183,6 @@ Para crear la "imagen" del proyecto ejecutamos:
 
 Para crear el docker y ejecutar "santacruz-94425" debo hacer:
   >  docker run -d -p 8080:8080 santacruz-94425
-
----
-
-✍️ Autor
-
-Carlos Santa Cruz
-Proyecto académico – Backend Node.js
 
 ---
 
@@ -213,6 +198,7 @@ Proyecto académico – Backend Node.js
 - [fakerES](https://fakerjs.dev/):  Generate massive amounts of fake (but realistic) data for testing and development.
 - Swagger (OpenAPI)
 - Mocha, Chai y Supertest
+- [Docker](https://www.docker.com/) : Un ecosistema de contenedores gratuitos que ofrecen a cada desarrollador un punto de partida, con opciones empresariales para SLA.
 
 
 ---
@@ -225,12 +211,21 @@ Proyecto académico – Backend Node.js
 npm install 
 ```
 
-3. Ejecuta el servidor:
+3. Configurar .env  (cambiar nombre de .env_copy por .env)
+
+4. Ejecuta el servidor:
 ```bash
 # npm start
 ```
 
-5. Luego podrá acceder a la aplicación desde cualquier navegador en **localhost** 
+5. Luego podrá acceder a la aplicación desde cualquier navegador 
+
+---
+
+✍️ Autor
+
+Carlos Santa Cruz
+Proyecto académico – Backend Node.js
 
 ---
 
