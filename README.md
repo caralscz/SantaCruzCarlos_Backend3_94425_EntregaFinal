@@ -169,10 +169,12 @@ Ejecutar:
 npm test
 ```
 
-Incluye tests funcionales para el router de adopciones.
-Nota: En el Test B
+- Incluye tests funcionales para el router de adopciones.
+
+- Nota: En el Test B
       para que funcione, el "petid" que se coloque debe tener "adopted": false,
       porque se controla que el "petid" no esté ya adoptado
+      
 ---
 
 ## Docker 
